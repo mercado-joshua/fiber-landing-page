@@ -15,7 +15,7 @@ Converted website from design mockup.
 
 ## Description
 ### Purpose:
-A finished coding challenge from [frontendmentor.io](https://www.codewell.cc/challenges/fiber-landing-page--608a7e639691700015db16d1).
+A finished coding challenge from [codewell.cc](https://www.codewell.cc/challenges/fiber-landing-page--608a7e639691700015db16d1).
 I took the challenge to test and practice my responsive layout skill.
 
 ### Technology used:
