@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Fiber Landing Page</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <div class="form-section">
+        <div class="formbox">
+            <section class="form">
+                <h1 class="title">Fiber</h1>
+
+                <h2 class="subtitle">Create your Fiber account</h2>
+
+                <form 
+                    action="" 
+                    class="signup-form"
+                    data-js-signup-form
+                >
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input 
+                            class="name"
+                            type="text" 
+                            name="name" 
+                            id="name"
+                            placeholder="John Doe"
+                            pattern="[A-Za-z ]+"
+                            required
+                            data-js-fullname
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            class="email"
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            placeholder="john@example.com"
+                            required
+                            data-js-email
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            class="password"
+                            type="password" 
+                            name="password" 
+                            id="password"
+                            minlength="8"
+                            placeholder="At least 8 characters"
+                            required
+                            data-js-password
+                        />
+                    </div>
+
+                    <div class="check-group">
+                        <input 
+                            class="terms"
+                            type="checkbox" 
+                            name="terms" 
+                            id="terms"
+                            data-js-agree-btn
+                        />
+
+                        <p class="description">By creating an account on Fiber, you agree to the <a href="#terms" class="-bold" >Terms and Conditions</a>.</p>
+                    </div>
+
+                    <input class="signup-btn" type="submit" value="Create Fiber Account"/>
+
+                    <p class="description">Already have an account? <a href="#signin" class="-normal">Sign in</a></p>
+                </form>
+            </section>
+        </div>
+        <!-- .formbox ends -->
+
+        <div class="sliderbox">
+            <div class="swiper slider-list" data-js-slide-list>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-card">
+                        <div class="imagebox">
+                            <img src="./images/Page Image.png" alt="" class="image">
+                        </div>
+    
+                        <div class="contentbox">
+                            <h2 class="title">Unparalled Templates</h2>
+                            <p class="description">Crafted buy a team of professional designers, our templates are unparalled in the market.</p>
+                        </div>
+                    </div>
+                    <!-- .slide-card ends -->
+
+                    <div class="swiper-slide slider-card">
+                        <div class="imagebox">
+                            <img src="./images/Sign Up Image.png" alt="" class="image">
+                        </div>
+    
+                        <div class="contentbox">
+                            <h2 class="title">Flexible Plans</h2>
+                            <p class="description">Whether you are a professional or hobbyist, there is a plan just for you.</p>
+                        </div>
+                    </div>
+                    <!-- .slide-card ends -->
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- .slide-list ends -->
+        </div>
+        <!-- .slidebox ends -->
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/signup/behaviors/slide-list.js"></script>
+    <script src="js/signup/behaviors/signup-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.jumbotron {
+    background: #4d13d1;
+    padding: 3rem 2rem 0 2rem;
+    border-radius: .4rem;
+    color: #fff;
+
+    > .contentbox {
+        > .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.signin-btn,
+.signup-btn,
+.link-btn,
+.close-btn {
+    background: transparent;
+}
+
+.signup-btn {
+    padding: .5rem 1rem;
+    border-radius:.3rem;
+    background: #4d13d1;
+    color: #fff;
+    font-weight: bold;
+    transition: 
+        background 250ms ease-in-out,
+        transform 150ms ease; 
+
+    &:focus,
+    &:hover {
+        background: #b7a5d8;
+    }
+
+    &:active {
+        transform: scale(.99);
+    }
+
+    &.-invert {
+        background: #fff;
+        color: #4d13d1;
+
+        &:focus,
+        &:hover {
+            background: #b7a5d8;
+            color: #fff;
+        }
+    }
+}
+
+.link-btn {
+    padding: .5rem 1rem;
+    font-weight: bold;
+    color: #4d13d1;
+    text-decoration: underline;
+    transition: 
+        background 250ms ease-in-out,
+        transform 150ms ease; 
+
+    &:focus,
+    &:hover {
+        color: #b7a5d8;
+    }
+
+    &:active {
+        transform: scale(.99);
+    }
+}
+
+.close-btn {
+    > .icon {
+        font-size: 2rem;
+    }
+}
+

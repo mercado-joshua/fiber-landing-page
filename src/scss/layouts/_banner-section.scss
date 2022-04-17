@@ -1,0 +1,156 @@
+@use '../utils/breakpoints';
+
+.banner-section {
+    background: #fbf8f3;
+    padding: 1.5rem 0;
+}
+
+.headerbox  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    > .nav-section {
+        display: none;
+
+        @include breakpoints.media-breakpoint-up(600px) {
+            flex: 1;
+            display: flex;
+
+            > .close-btn {
+                display: none;
+            }
+
+            > .primary-menu,
+            > .secondary-menu {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            > .primary-menu {
+                margin: 0 auto;
+
+                > .item {
+                    > .link {
+                        color: #000;
+                        opacity: .7;
+                    }
+                }
+            }
+
+            > .secondary-menu {
+                gap: 1.5rem;
+
+                > .item {
+                    > .signin-btn {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoints.media-breakpoint-up(600px) {
+        > .menu-btn {
+            display: none;
+        }
+    }
+}
+
+.bannerbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > .contentbox {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        > .reviewbox {
+            display: none;
+        }
+
+        > .title {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        > .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            > .link {
+                > .signup-btn {
+                    width: 100%;
+                }
+            }
+        }
+
+        > .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            > .item {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            @include breakpoints.media-breakpoint-up(900px) {
+                flex-direction: row;
+            }
+        }
+    }
+
+    @include breakpoints.media-breakpoint-up(450px) {
+        padding: 0 2rem;
+    }
+
+    @include breakpoints.media-breakpoint-up(600px) {
+        padding: 0 4rem;
+    }
+
+    @include breakpoints.media-breakpoint-up(700px) {
+        padding: 0 6rem;
+    }
+
+    @include breakpoints.media-breakpoint-up(768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 3rem 0;
+
+        > .contentbox {
+            order: -1;
+
+            > .actions {
+                flex-direction: row;
+            }
+
+            > .reviewbox {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                > .review {
+                    font-weight: bold;
+                }
+
+                > .stars {
+                    > .icon {
+                        color: #ff962a;
+                    }
+                }
+            }
+        }
+    }
+}

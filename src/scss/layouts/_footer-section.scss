@@ -1,0 +1,55 @@
+@use '../utils/breakpoints';
+
+.footer-section {
+    background: #fbf8f3;
+    padding: 3rem 0;
+}
+
+.footerbox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > .introbox {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        > .title {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    }
+
+    @include breakpoints.media-breakpoint-up(768px) {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+    }
+}
+
+.quicklinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > .linkbox {
+        > .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        > .links {
+            > .item {
+                > .link {
+                    color: #000;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    @include breakpoints.media-breakpoint-up(768px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    }
+}

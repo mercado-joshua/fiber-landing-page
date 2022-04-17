@@ -1,0 +1,14 @@
+.testimonial-card {
+    border: solid #dadada;
+    border-radius: .3rem;
+    padding: 1rem;
+
+    > .profile {
+        > .user {
+            > .name {
+                font-weight: bold;
+                color: #4d13d1;
+            }
+        }
+    }
+}
