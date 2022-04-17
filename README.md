@@ -1,5 +1,5 @@
 # Title: Fiber landing page
-* Click [here](./dist/index.html) to view the project.
+* Click [here](https://mercado-joshua.github.io/fiber-landing-page/) to view the project.
 * Checkout src folder for source code.
 <br>
 ***Note:*** the `dist's css folder` is intended to be uncompressed to let others view the CSS code in a readable format.
@@ -22,7 +22,7 @@ I took the challenge to test and practice my responsive layout skill.
 * **HTML**
 * **CSS** and **SASS**
 * **Bootstrap** for default styling of base elements
-* **Javascript** for mobile navigation, Contraints validation API, and Swiper.js for sliders and carousel.
+* **Javascript** for mobile navigation, **[Contraint Validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation)**, and **[Swiper.js](https://swiperjs.com/)** for sliders and carousel.
 * **[RSCSS](https://rscss.io/index.html)** and **[RSJS](https://ricostacruz.com/rsjs/)** as naming convention
 * **Gulp** as preferred task runner
 
