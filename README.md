@@ -22,7 +22,7 @@ I took the challenge to test and practice my responsive layout skill.
 * **HTML**
 * **CSS** and **SASS**
 * **Bootstrap** for default styling of base elements
-* **Javascript** for mobile navigation, **[Contraint Validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation)**, and **[Swiper.js](https://swiperjs.com/)** for sliders and carousel.
+* **Javascript** for mobile navigation, **[Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation)**, and **[Swiper.js](https://swiperjs.com/)** for sliders and carousel.
 * **[RSCSS](https://rscss.io/index.html)** and **[RSJS](https://ricostacruz.com/rsjs/)** as naming convention
 * **Gulp** as preferred task runner
 
